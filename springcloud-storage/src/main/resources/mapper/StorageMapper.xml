@@ -3,5 +3,17 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.storage.mapper.StorageMapper">
 
+    <select id="findStorageCountByidAndCount" resultType="Integer">
+        select count(1) from storage
+        where 1=1
+        product_id=#{productId}
+        and total>#{count}
+    </select>
+
+    <update id="buyProductRestult" >
+        update storage
+        set total - #{count}
+        where 1=1 and product_id=#{productId}
+    </update>
 
 </mapper>
