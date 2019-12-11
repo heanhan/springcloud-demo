@@ -6,12 +6,14 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableDiscoveryClient
 @EnableFeignClients
 @EnableEurekaClient
 @EnableHystrix
 @SpringBootApplication
+@EnableSwagger2
 public class SpirngcloudBank1Application {
 
     public static void main(String[] args) {
