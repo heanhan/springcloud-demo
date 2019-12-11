@@ -39,13 +39,13 @@
             <scope>provided</scope>
         </dependency>
 
-        <!--ribbon 的依赖-->
+        <!--eureka的client依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
-        <!--eureka的client依赖-->
+        <!--ribbon 的依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
